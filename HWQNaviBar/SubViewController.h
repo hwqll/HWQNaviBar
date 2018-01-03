@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SubViewController.h
 //  HWQNaviBar
 //
 //  Created by hwq on 2018/1/2.
@@ -12,8 +12,6 @@
 #define XNavHeight 85
 #define Screen_Width [[UIScreen mainScreen] bounds].size.width
 
-@interface ViewController : UIViewController
-
+@interface SubViewController : UIViewController
 
 @end
-

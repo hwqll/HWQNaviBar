@@ -15,6 +15,8 @@
 		8590F8161FFB818800BAA1FF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8590F8151FFB818800BAA1FF /* main.m */; };
 		8590F8201FFB818800BAA1FF /* HWQNaviBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8590F81F1FFB818800BAA1FF /* HWQNaviBarTests.m */; };
 		8590F82B1FFB818800BAA1FF /* HWQNaviBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8590F82A1FFB818800BAA1FF /* HWQNaviBarUITests.m */; };
+		8590F83A1FFB81B000BAA1FF /* MyNavBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8590F8391FFB81B000BAA1FF /* MyNavBar.m */; };
+		8590F83E1FFB856D00BAA1FF /* SubViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8590F83D1FFB856D00BAA1FF /* SubViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		8590F8261FFB818800BAA1FF /* HWQNaviBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HWQNaviBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8590F82A1FFB818800BAA1FF /* HWQNaviBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HWQNaviBarUITests.m; sourceTree = "<group>"; };
 		8590F82C1FFB818800BAA1FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8590F8381FFB81B000BAA1FF /* MyNavBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNavBar.h; sourceTree = "<group>"; };
+		8590F8391FFB81B000BAA1FF /* MyNavBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNavBar.m; sourceTree = "<group>"; };
+		8590F83C1FFB856D00BAA1FF /* SubViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubViewController.h; sourceTree = "<group>"; };
+		8590F83D1FFB856D00BAA1FF /* SubViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 		8590F8051FFB818800BAA1FF /* HWQNaviBar */ = {
 			isa = PBXGroup;
 			children = (
+				8590F83B1FFB81B400BAA1FF /* NaviBar */,
 				8590F8061FFB818800BAA1FF /* AppDelegate.h */,
 				8590F8071FFB818800BAA1FF /* AppDelegate.m */,
 				8590F8091FFB818800BAA1FF /* ViewController.h */,
@@ -110,6 +117,8 @@
 				8590F8111FFB818800BAA1FF /* LaunchScreen.storyboard */,
 				8590F8141FFB818800BAA1FF /* Info.plist */,
 				8590F8151FFB818800BAA1FF /* main.m */,
+				8590F83C1FFB856D00BAA1FF /* SubViewController.h */,
+				8590F83D1FFB856D00BAA1FF /* SubViewController.m */,
 			);
 			path = HWQNaviBar;
 			sourceTree = "<group>";
@@ -130,6 +139,15 @@
 				8590F82C1FFB818800BAA1FF /* Info.plist */,
 			);
 			path = HWQNaviBarUITests;
+			sourceTree = "<group>";
+		};
+		8590F83B1FFB81B400BAA1FF /* NaviBar */ = {
+			isa = PBXGroup;
+			children = (
+				8590F8381FFB81B000BAA1FF /* MyNavBar.h */,
+				8590F8391FFB81B000BAA1FF /* MyNavBar.m */,
+			);
+			path = NaviBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +283,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8590F83E1FFB856D00BAA1FF /* SubViewController.m in Sources */,
 				8590F80B1FFB818800BAA1FF /* ViewController.m in Sources */,
+				8590F83A1FFB81B000BAA1FF /* MyNavBar.m in Sources */,
 				8590F8161FFB818800BAA1FF /* main.m in Sources */,
 				8590F8081FFB818800BAA1FF /* AppDelegate.m in Sources */,
 			);
@@ -433,6 +453,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55RFX6KFS7;
 				INFOPLIST_FILE = HWQNaviBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hwq.HWQNaviBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -447,6 +468,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 55RFX6KFS7;
 				INFOPLIST_FILE = HWQNaviBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hwq.HWQNaviBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
